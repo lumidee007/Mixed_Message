@@ -9,6 +9,11 @@ body {
   margin: 0 auto;
 }
 
+body main div {
+  width: 95%;
+  margin: 0 auto;
+}
+
 button {
   background-color: #4caf50; /* Green */
   border: none;
