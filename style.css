@@ -5,13 +5,16 @@ body {
   line-height: 1.6;
   color: #333333;
   text-align: center;
-  max-width: 920px;
+  max-width: 850px;
   margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(90deg, yellow, rgb(56, 197, 197));
 }
 
 body main div {
   width: 95%;
   margin: 0 auto;
+  /* margin-top: 150px; */
 }
 
 button {
@@ -22,21 +25,62 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 4px 2px;
+  font-weight: 900;
   cursor: pointer;
   border-radius: 12px;
+  background-image: linear-gradient(
+    40deg,
+    rgba(138, 207, 27, 0.205),
+    rgb(206, 163, 23),
+    rgb(128, 70, 0)
+  );
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+button:hover {
+  color: chartreuse;
+  transform: scale(0.9);
 }
 
 #output {
   display: block;
   width: 100%;
-  height: 100px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   padding: 10px;
   box-sizing: border-box;
   overflow: auto;
   margin-top: 9px;
-  border-radius: 4px;
+  border-radius: 7px;
+  display: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Lucida Sans",
+    Arial, sans-serif;
+}
+@keyframes example {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  animation-name: example;
+  animation-duration: 5s;
+  font-family: cursive;
+  font-size: 3rem;
+}
+
+p {
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #4caf50;
+  font-size: 20px;
 }
