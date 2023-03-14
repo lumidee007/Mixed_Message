@@ -1,5 +1,7 @@
 # A Random Mixed message.
 
+![project_image](./images/img.jpeg)
+
 This is a simple JavaScript program that generates a random javascript question and answer pair using a generateMessage function, and displays them on a webpage using DOM manipulation.
 
 ## Usage
